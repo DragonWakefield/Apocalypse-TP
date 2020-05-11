@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Button.gd" type="Script" id=1]
+[ext_resource path="res://art/tp.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/End.gd" type="Script" id=3]
+[ext_resource path="res://music/Astronomia [Nocopyright music] #Freemusic #Nocopyrightsmusic #Noroyalty.wav" type="AudioStream" id=4]
+
+[node name="End" type="Control"]
+self_modulate = Color( 0.984314, 0.984314, 0.984314, 1 )
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_scale = Vector2( 1.00247, 1.00832 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 119.705
+margin_top = 142.811
+margin_right = 202.705
+margin_bottom = 162.811
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.981728, 0.842873 )
+text = "Play Again?"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 135.665, 79.3397 )
+scale = Vector2( 1.46903, 0.802896 )
+texture = ExtResource( 2 )
+
+[node name="score" type="RichTextLabel" parent="."]
+margin_left = 159.606
+margin_top = 71.4057
+margin_right = 199.606
+margin_bottom = 111.406
+rect_scale = Vector2( 1.84695, 1.59927 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score_title" type="RichTextLabel" parent="."]
+margin_left = 119.705
+margin_top = 15.8679
+margin_right = 159.705
+margin_bottom = 55.8679
+rect_scale = Vector2( 2.35312, 1.75749 )
+text = "Score"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 9.0
+autoplay = true
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

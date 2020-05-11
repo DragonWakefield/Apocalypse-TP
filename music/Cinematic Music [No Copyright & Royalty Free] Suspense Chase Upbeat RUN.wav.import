@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Cinematic Music [No Copyright & Royalty Free] Suspense Chase Upbeat RUN.wav-5cad48bb759c538d490fc7f7cc2bce3f.sample"
+
+[deps]
+
+source_file="res://music/Cinematic Music [No Copyright & Royalty Free] Suspense Chase Upbeat RUN.wav"
+dest_files=[ "res://.import/Cinematic Music [No Copyright & Royalty Free] Suspense Chase Upbeat RUN.wav-5cad48bb759c538d490fc7f7cc2bce3f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
